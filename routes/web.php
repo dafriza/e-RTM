@@ -16,8 +16,11 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
-Route::get('/', [AuthController::class,'index'])->name('login');
-Route::get('logout', [AuthController::class,'index'])->name('logout');
+Route::get('/', [AuthController::class,'index'])->name('/');
+
+Route::post('login',[AuthController::class,'store'])->name('login');
+
+Route::get('logout', [AuthController::class,'logout'])->name('logout');
 
 Route::get('dashboard',[DashboardController::class,'index'])->name('dashboard');
 

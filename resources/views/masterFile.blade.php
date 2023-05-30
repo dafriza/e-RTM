@@ -34,25 +34,25 @@ License: You must have a valid license purchased only from above link or https:/
     <div class="main-wrapper">
 
         <!-- partial:partials/_sidebar.html -->
-        @include('Sections.sidebar');
+        @include('Sections.sidebar')
         <!-- partial -->
 
         <div class="page-wrapper">
 
             <!-- partial:partials/_navbar.html -->
-            @include('Sections.navbar');
+            @include('Sections.navbar')
             <!-- partial -->
 
             <div class="page-content">
 
-                @yield('content');
+                @yield('content')
 
             </div>
 
             <!-- partial:partials/_footer.html -->
-            @include('Sections.footer');
+            @include('Sections.footer')
             <!-- partial -->
-
+            @include('sweetalert::alert')
         </div>
     </div>
 
